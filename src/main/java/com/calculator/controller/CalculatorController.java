@@ -33,7 +33,7 @@ public class CalculatorController {
             @ApiResponse(code = 500, message = "Server error.")
     })
     @GetMapping
-    public ResponseEntity<BigDecimal> getOperationResult(BigDecimal num1, Operator operator, BigDecimal num2) {
+    public ResponseEntity<BigDecimal> getOperationResult(BigDecimal num1, BigDecimal num2, Operator operator) {
         logger.log("Enter the request with the data -> num1: " + num1 + ", num2: " + num2 + ", operación: " + operator.name());
         BigDecimal result = calculatorService.getOperationResult(num1, num2, operator);
         logger.log("The result was: " + result);
