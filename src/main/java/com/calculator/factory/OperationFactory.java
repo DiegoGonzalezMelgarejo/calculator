@@ -18,8 +18,8 @@ public class OperationFactory {
     @Autowired
     private final Logger logger;
     @Autowired
-    public OperationFactory(Set<StrategyOperation> strategySet, Logger logger, Logger logger1) {
-        this.logger = logger1;
+    public OperationFactory(Set<StrategyOperation> strategySet, Logger logger) {
+        this.logger = logger;
         createStrategy(strategySet);
 
     }

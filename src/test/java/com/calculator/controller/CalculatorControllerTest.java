@@ -1,4 +1,4 @@
-package com.calculator;
+package com.calculator.controller;
 
 import com.calculator.configuration.log.Logger;
 import com.calculator.configuration.log.LoggerImpl;
